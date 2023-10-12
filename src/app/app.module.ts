@@ -20,7 +20,6 @@ import { AccountTableComponent } from './backpage/account.table/account.table.co
 import { AccountModalComponent } from './backpage/account.modal/account.modal.component';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     AdminComponent,
     AccountTableComponent,
     AccountModalComponent
+
   ],
   imports: [
     BrowserModule,
