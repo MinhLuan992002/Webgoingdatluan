@@ -14,9 +14,13 @@ import { OderCompleteComponent } from './oder-complete/oder-complete.component';
 import { ViewComponent } from './view/view.component';
 
 
+
+
+
 const routes: Routes = [
   { path:'', component:HomeComponent},
   { path:'home', component:HomeComponent},
+  { path:'view/:id', component: ViewComponent},
   { path:'shop', component:ShopComponent},
   { path:'account', component:AccountComponent},
   { path:'login', component:LoginComponent},
@@ -27,7 +31,7 @@ const routes: Routes = [
   { path:'changepassword', component: ChangepasswordComponent},
   { path:'checkout', component: CheckoutComponent},
   { path:'oder-complete', component: OderCompleteComponent},
-  { path:'view', component: ViewComponent},
+
 
 
   

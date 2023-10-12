@@ -90,29 +90,29 @@
       <!-- ---- Product Image  --->
     <div>
          <div>
-              <img id="main-img" src="../assets/images/products/product12.jpg" class="w-full" />
+              <img id="main-img" src="{{takeProduct.hinh}}" class="w-full" />
          </div>
 
     <div class="grid grid-cols-5 gap-4 mt-4 ">
 
          <div>
-              <img src="../assets/images/products/product12.jpg" class="single-img w-full cursor-pointer border border-primary " />
+              <img src="{{takeProduct.hinh}}" class="single-img w-full cursor-pointer border border-primary " />
          </div>
 
          <div>
-              <img src="../assets/images/products/product2.jpg" class="single-img file:w-full cursor-pointer border   " />
+              <img src="{{takeProduct.hinh}}" class="single-img file:w-full cursor-pointer border   " />
          </div>
 
          <div>
-              <img src="../assets/images/products/product3.jpg" class="single-img w-full cursor-pointer border   " />
+              <img src="{{takeProduct.hinh}}" class="single-img w-full cursor-pointer border   " />
          </div>
 
          <div>
-              <img src="../assets/images/products/product4.jpg" class="single-img w-full cursor-pointer border " />
+              <img src="{{takeProduct.hinh}}" class="single-img w-full cursor-pointer border " />
          </div>
 
          <div>
-              <img src="../assets/images/products/product5.jpg" class="single-img w-full cursor-pointer border  " />
+              <img src="{{takeProduct.hinh}}" class="single-img w-full cursor-pointer border  " />
          </div> 
     </div> 
     </div> 
@@ -120,7 +120,7 @@
 
        <!-- ---- Product Content  --->
     <div>
-         <h2 class="md:text-3xl text-2xl font-medium uppercase mb-2" >ITALIAN L SHAPE SOFA</h2>
+         <h2 class="md:text-3xl text-2xl font-medium uppercase mb-2" >{{takeProduct.tensp}}</h2>
          <div class="flex items-center mb-4">
               <div class="flex gap-1 text-sm text-yellow-400 ">
                    <span><i class="fas fa-star"></i> </span>
@@ -155,7 +155,7 @@
          </div>
 
          <div class="mt-4 flex items-baseline gap-3 ">
-          <span class="text-primary font-semibold text-xl ">$450.00</span>
+          <span class="text-primary font-semibold text-xl ">{{takeProduct.giasp}}</span>
          <span class="text-gray-500 text-base line-through">$500.00</span>
          </div>
          <p class="mt-4 text-gray-600">
@@ -260,7 +260,7 @@
 <!-- ---- ADD TO CART BUTTON ---> 
 
 <div class="flex gap-3 border-b border-gray-200 pb-5 mt-6 ">
-    <a href="#" class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center " >
+    <a  href="#" class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center " >
          <span class="mr-2"><i class="fas fa-shopping-bag"></i> </span>
          Add to Cart
     </a>
@@ -307,19 +307,7 @@
 
        <div class="lg:w-4/5 xl:w-3/5 pt-6">
             <div class="space-y-3 text-gray-600">
-              <p>
-                   Incredible graphics performanceMacBook Air can take on more graphics-intensive projects than ever. For the first time, content creators can edit and seamlessly play back multiple streams of full‑quality 4K video without dropping a frame. 
-              </p>
-
-              <p>
-                   Incredible graphics performanceMacBook Air can take on more graphics-intensive projects than ever. For the first time, content creators can edit and seamlessly play back multiple streams of full‑quality 4K video without dropping a frame.
-              </p>
-
-
-              <p>
-                 
-              Apps on MacBook Air can use machine learning (ML) to automatically retouch photos like a pro, make smart tools such as magic wands and audio filters more accurate at auto‑detection, and so much more. That’s not just brain power — that’s the power of a full stack of ML technologies.
-              </p>
+              <p>{{takeProduct.mota}}</p>
             </div>
 
 
@@ -356,7 +344,7 @@
           <!-- ---- Start Single Product  ----- -->
           <div class="group rounded bg-white shadow overflow-hidden ">
                <div class="relative ">
-              <img src="../assets/images/products/product1.jpg" class="w-full" /> 
+              <img src="../assets/images/products/product5.png" class="w-full" /> 
 
               <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
              <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
@@ -369,7 +357,7 @@
                </div>
 
               <div class="pt-4 pb-3 px-4 ">
-                   <a href="view.html" >
+                   <a href="view.html" routerLink="/view" >
                         <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
                    </a>
 
@@ -401,7 +389,7 @@
 <!-- ---- Start Single Product  ----- -->
 <div class="group rounded bg-white shadow overflow-hidden ">
     <div class="relative ">
-   <img src="../assets/images/products/product2.jpg" class="w-full" /> 
+   <img src="../assets/images/products/product4.png" class="w-full" /> 
 
    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
     <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
@@ -414,7 +402,7 @@
     </div>
 
    <div class="pt-4 pb-3 px-4 ">
-        <a href="view.html" >
+        <a href="view.html" routerLink="/view" >
              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
         </a>
 
@@ -444,9 +432,9 @@
 
 
  <!-- ---- Start Single Product  ----- -->
- <div class="group rounded bg-white shadow overflow-hidden ">
+ <div class="group rounded bg-white shadow overflow-hidden " >
     <div class="relative ">
-   <img src="../assets/images/products/product3.jpg" class="w-full" /> 
+   <img src="../assets/images/products/product3.png" class="w-full" /> 
 
    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
     <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
@@ -459,7 +447,7 @@
     </div>
 
    <div class="pt-4 pb-3 px-4 ">
-        <a href="view.html" >
+        <a href="view.html" routerLink="/view" >
              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
         </a>
 
@@ -492,7 +480,7 @@
  <!-- ---- Start Single Product  ----- -->
  <div class="group rounded bg-white shadow overflow-hidden ">
     <div class="relative ">
-   <img src="../assets/images/products/product4.jpg" class="w-full" /> 
+   <img src="../assets/images/products/product4.png" class="w-full" /> 
 
    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
     <a href="view.html" class="text-white text-lg w-9 h-9 rounded-full bg-primary hover:bg-gray-800 transition flex  items-center justify-center " >
@@ -505,7 +493,7 @@
     </div>
 
    <div class="pt-4 pb-3 px-4 ">
-        <a href="view.html" >
+        <a href="view.html" routerLink="/view">
              <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">Guyer Chair </h4> 
         </a>
 

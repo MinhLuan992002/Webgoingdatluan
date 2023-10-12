@@ -15,6 +15,7 @@ import { ViewComponent } from './view/view.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { OderCompleteComponent } from './oder-complete/oder-complete.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,11 +31,15 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ViewComponent,
     ChangepasswordComponent,
     OderCompleteComponent,
-    CheckoutComponent
+    CheckoutComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
