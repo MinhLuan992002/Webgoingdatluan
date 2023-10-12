@@ -15,6 +15,9 @@ import { ViewComponent } from './view/view.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { OderCompleteComponent } from './oder-complete/oder-complete.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AdminComponent } from './backpage/admin/admin.component';
+import { AccountTableComponent } from './backpage/account.table/account.table.component';
+import { AccountModalComponent } from './backpage/account.modal/account.modal.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ViewComponent,
     ChangepasswordComponent,
     OderCompleteComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    AdminComponent,
+    AccountTableComponent,
+    AccountModalComponent
   ],
   imports: [
     BrowserModule,

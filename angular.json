@@ -27,7 +27,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/index.js",
+              "src/assets/js/us-aea-en.js",
+              "src/assets/js/components/chart-01.js",
+              "src/assets/js/components/chart-02.js",
+              "src/assets/js/components/chart-03.js",
+              "src/assets/js/components/chart-04.js",
+              "src/assets/js/components/map-01.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,7 +97,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/index.js",
+              "src/assets/js/us-aea-en.js",
+              "src/assets/js/components/chart-01.js",
+              "src/assets/js/components/chart-02.js",
+              "src/assets/js/components/chart-03.js",
+              "src/assets/js/components/chart-04.js",
+              "src/assets/js/components/map-01.js"
+            ]
           }
         }
       }
