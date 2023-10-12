@@ -18,6 +18,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { AdminComponent } from './backpage/admin/admin.component';
 import { AccountTableComponent } from './backpage/account.table/account.table.component';
 import { AccountModalComponent } from './backpage/account.modal/account.modal.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { AccountModalComponent } from './backpage/account.modal/account.modal.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
