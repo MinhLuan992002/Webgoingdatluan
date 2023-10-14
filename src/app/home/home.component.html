@@ -71,7 +71,7 @@
 
 <!-- ---- Start Banner  ----- -->
 <div class="bg-cover bg-no-repeat bg-center py-36 relative"
-     style="background-image: url('../assets/images/banner-bg.jpg');">
+     style="background-image: url('../assets/images/banner_smartphone.avif');" >
      <div class="container">
           <!-- ---- Banner Content   ----- -->
           <h1 class="xl:text-6xl md:text-5xl text-4xl text-gray-800 font-semibold mb-4 ">
@@ -154,7 +154,7 @@
                <img src="../assets/images/products/product2.png" class="w-full" />
                <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white font-roboto font-medium tracking-wide transition ">
-                    Bedroom
+                   SAMSUNG
                </a>
           </div>
           <!-- ---- Single Categories End  ----- -->
@@ -165,7 +165,7 @@
                <img src="../assets/images/products/product3.png" class="w-full" />
                <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white font-roboto font-medium tracking-wide transition ">
-                    Sofa
+                    OPPO
                </a>
           </div>
           <!-- ---- Single Categories End  ----- -->
@@ -176,7 +176,7 @@
                <img src="../assets/images/products/product4.png" class="w-full" />
                <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white font-roboto font-medium tracking-wide transition ">
-                    Office
+                    IPHONE
                </a>
           </div>
           <!-- ---- Single Categories End  ----- -->
@@ -187,7 +187,7 @@
                <img src="../assets/images/products/product5.png" class="w-full" />
                <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white font-roboto font-medium tracking-wide transition ">
-                    OutDoor
+                    VIVO
                </a>
           </div>
           <!-- ---- Single Categories End  ----- -->
@@ -198,7 +198,7 @@
                <img src="../assets/images/products/product2.png" class="w-full" />
                <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white font-roboto font-medium tracking-wide transition ">
-                    Mattress
+                    XIAOMI
                </a>
           </div>
           <!-- ---- Single Categories End  ----- -->
@@ -377,7 +377,7 @@
           <!-- ---- Start Single Product  ----- -->
           <div class="group rounded bg-white shadow overflow-hidden ">
                <div class="relative ">
-                    <img src="../assets/images/products/product3.png" class="w-full" />
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/289700/iphone-14-pro-max-den-thumb-600x600.jpg" class="w-full" />
 
                     <div
                          class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition ">
@@ -436,7 +436,7 @@
 <!-- ---- Start Add  ----- -->
 <div class="container pb-16 ">
      <a href="#">
-          <img src="../assets/images/offer.jpg" class="w-full" />
+          <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/10/banner/C53-720-220-720x220-1.png" class="w-full" />
      </a>
 
 </div>
@@ -468,12 +468,12 @@
 
                <div class="pt-4 pb-3 px-4 ">
                     <a routerLink="/view/{{pro.id}}">
-                         <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition ">
+                         <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition " style="white-space: nowrap">
                               {{pro.tensp}} </h4>
                     </a>
 
                     <div class="flex items-baseline mb-1 space-x-2 ">
-                         <p class="text-xl text-primary font-roboto font-semibold "> {{pro.giasp}} </p>
+                         <p class="text-xl text-primary font-roboto font-semibold "> {{pro.giasp |number:'1.0-0':'fr'}} VNĐ </p>
                          <p class="text-sm text-gray-400 font-roboto  line-through "> $55.00</p>
                     </div>
                     <div class="flex items-center ">

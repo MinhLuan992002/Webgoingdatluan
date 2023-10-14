@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
 import { DataService } from '../data.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Data } from '@angular/router';
 import { IProduct } from '../iproduct';
+import { CartService } from '../cart.service';
+import localeFr from '@angular/common/locales/fr';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localeFr, 'fr');
+
 
 
 @Component({
@@ -13,7 +18,10 @@ import { IProduct } from '../iproduct';
 export class ViewComponent {
   constructor( 
     private d:DataService,  
-    private route:ActivatedRoute 
+    private route:ActivatedRoute, 
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private cartService: CartService,
   ) { }
   takeProduct:IProduct={
    id:0, tensp:"", giasp:0, 
@@ -29,7 +37,16 @@ export class ViewComponent {
      res => { 
        this.takeProduct  = res[0];
        this.idLoai = this.takeProduct.idLoai;
+       
 
      });
+     
      }//res
+     addToCart() {
+      this.cartService.addToCart(this.takeProduct);
+      this.router.navigate(['/cart']);
+    }
+  
+    
+
  }

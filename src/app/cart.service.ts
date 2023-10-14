@@ -31,8 +31,12 @@ export class CartService {
         tongTien: sp.giasp
       }
       this.itemts.push(item)
+     
     }
+    localStorage.setItem('cart', JSON.stringify(this.itemts));
+    
   }
+
   removeFromCart(sp: IProduct) {
     const index = this.itemts.findIndex(item => item.id === sp.id);
     if (index > -1) {
@@ -41,7 +45,12 @@ export class CartService {
     }
   }
 
-
+  getCartFromLocalStorage() {
+    const cartStr = localStorage.getItem('cart');
+    if (cartStr) {
+      this.itemts = JSON.parse(cartStr);
+    }
+  }
   clearCart() { this.itemts = []; return this.itemts }
   getItems() { return this.itemts };
 }

@@ -155,7 +155,7 @@
          </div>
 
          <div class="mt-4 flex items-baseline gap-3 ">
-          <span class="text-primary font-semibold text-xl ">{{takeProduct.giasp}}</span>
+          <span class="text-primary font-semibold text-xl ">{{takeProduct.giasp|number:'1.0-0':'fr'}} VNĐ</span>
          <span class="text-gray-500 text-base line-through">$500.00</span>
          </div>
          <p class="mt-4 text-gray-600">
@@ -260,7 +260,7 @@
 <!-- ---- ADD TO CART BUTTON ---> 
 
 <div class="flex gap-3 border-b border-gray-200 pb-5 mt-6 ">
-    <a  href="#" class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center " >
+    <a (click)="addToCart()"   class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase hover:bg-transparent hover:text-primary transition text-sm flex items-center " >
          <span class="mr-2"><i class="fas fa-shopping-bag"></i> </span>
          Add to Cart
     </a>
@@ -378,7 +378,7 @@
                   </div>
               </div>
          
-              <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b font-medium hover:bg-transparent hover:text-primary transition " >
+              <a href="#" class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-b font-medium hover:bg-transparent hover:text-primary transition "  >
                    Add To Cart 
               </a>  
           </div>
