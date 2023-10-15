@@ -19,6 +19,7 @@ import { AdminComponent } from './backpage/admin/admin.component';
 import { AccountTableComponent } from './backpage/account.table/account.table.component';
 import { AccountModalComponent } from './backpage/account.modal/account.modal.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
     
   ],
   providers: [],
