@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class CartService {
 
   constructor(private h: HttpClient) { }
-  private itemts: Icart[] = [];
+   itemts: Icart[] = [];
   addToCart(sp: IProduct) {
     const index = this.itemts.findIndex(item => item.id == sp.id);
     if (index >= 0) {
@@ -53,5 +53,18 @@ export class CartService {
   }
   clearCart() { this.itemts = []; return this.itemts }
   getItems() { return this.itemts };
+  taoDonHang(hoten:string, diachi:string, dienthoai:string, email:string){
+    return this.h.post("http://localhost:3000/donhang",
+      {hoten:hoten, diachi:diachi, dienthoai:dienthoai, email:email },
+      { observe: 'response' }
+    )
+}
+luuChiTietDonhang(idDH:number, item:Icart){
+  return this.h.post<any>(
+    "http://localhost:3000/donhangchitiet",
+  {"iddh":idDH,"idsp":item.id,"tensp":item.tensp,"giasp":item.giasp,"soluong":item.soluong},
+    { observe: 'response' }
+  )
+  } 
 }
 
