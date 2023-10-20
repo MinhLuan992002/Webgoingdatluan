@@ -12,6 +12,7 @@ registerLocaleData(localeFr, 'fr');
 })
 export class HomeComponent {
   listSP:any;
+  
   constructor( private h: HttpClient, private cart: CartService ){
     this.h.get("http://localhost:3000/sanpham",
     {observe: 'response'}
@@ -35,4 +36,7 @@ this.listSP= res.body;
   ngOnInit():void{
 
   }
+}
+export class Product{
+  
 }

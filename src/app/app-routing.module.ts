@@ -12,6 +12,8 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OderCompleteComponent } from './oder-complete/oder-complete.component';
 import { ViewComponent } from './view/view.component';
+import { PayComponent } from './pay/pay.component';
+import { NewProductComponent } from './new-product/new-product.component';
 
 
 
@@ -31,7 +33,8 @@ const routes: Routes = [
   { path:'changepassword', component: ChangepasswordComponent},
   { path:'checkout', component: CheckoutComponent},
   { path:'oder-complete', component: OderCompleteComponent},
-
+  { path: 'pay', component: PayComponent},
+  { path: 'newproduct', component: NewProductComponent},
 
 
   

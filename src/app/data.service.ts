@@ -13,4 +13,9 @@ export class DataService {
     return this.h.get<IProduct[]>(url);
 
 }
+getNewProduct(){
+  var url='http://localhost:3000/sanpham?idLoai=1&_sort=ngay&order=desc&_limit=4';
+  return this.h.get<IProduct[]>( url );
 }
+}
+
