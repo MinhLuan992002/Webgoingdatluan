@@ -22,6 +22,8 @@ import { AccountModalComponent } from './backpage/account.modal/account.modal.co
 import { HttpClientModule } from '@angular/common/http';
 import { PayComponent } from './pay/pay.component';
 import { NewProductComponent } from './new-product/new-product.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { NewProductComponent } from './new-product/new-product.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
     FormsModule
+
   ],
   providers: [],
   
