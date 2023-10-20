@@ -20,15 +20,17 @@
               </div>
 
               <div class="pt-4 pb-3 px-4 ">
-                   <a href="view.html" routerLink="/view/{{pro.id}}">
-                        <h4
-                             class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition " style="white-space: nowrap;   text-overflow: ellipsis;
-                             overflow: hidden;">
-                            {{pro.tensp}} </h4>
-                   </a>
+               <div style="display: flex; flex-direction: column;">
+                    <a routerLink="/view/{{pro.id}}" href="#">
+                        <h6 class="uppercase font-medium text-l mb-2 text-gray-800 hover:text-primary transition"
+                            style="word-wrap: break-word; overflow-wrap: break-word;">
+                            {{pro.tensp}}
+                        </h6>
+                    </a>
+                </div>
 
                    <div class="flex items-baseline mb-1 space-x-2 ">
-                        <p class="text-xl text-primary font-roboto font-semibold " style="white-space: nowrap;" > {{pro.giasp|number:'1.0-0':'fr'}} VNĐ </p>
+                        <p class="text-l text-primary font-roboto font-semibold " style="white-space: nowrap;" > {{pro.giasp|number:'1.0-0':'fr'}} VNĐ </p>
                         <p class="text-sm text-gray-400 font-roboto  line-through "> $55.00 </p>
                    </div>
                    <div class="flex items-center ">
