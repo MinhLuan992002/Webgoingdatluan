@@ -14,7 +14,7 @@ export class DataService {
 
 }
 getNewProduct(){
-  var url='http://localhost:3000/sanpham?idLoai=1&_sort=ngay&order=desc&_limit=4';
+  var url='http://localhost:3000/sanpham?idLoai=1&_sort=ngay&order=desc&_limit=5';
   return this.h.get<IProduct[]>( url );
 }
 }
