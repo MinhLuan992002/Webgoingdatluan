@@ -7,20 +7,20 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent  {
-  infoCustomer: FormGroup;
+  // infoCustomer: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.infoCustomer = this.formBuilder.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      phoneNumber: ['', [Validators.required, Validators.pattern('[0-9]{10}')]],
-      dateOfBirth: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      confirmPassword: ['', [Validators.required, Validators.minLength(6)]]
-    },
-    {validator: this.passwordMatchValidator});
-  }
+  // constructor(private formBuilder: FormBuilder) {
+  //   this.infoCustomer = this.formBuilder.group({
+  //     firstName: ['', Validators.required],
+  //     lastName: ['', Validators.required],
+  //     phoneNumber: ['', [Validators.required, Validators.pattern('[0-9]{10}')]],
+  //     dateOfBirth: ['', Validators.required],
+  //     email: ['', [Validators.required, Validators.email]],
+  //     password: ['', [Validators.required, Validators.minLength(6)]],
+  //     confirmPassword: ['', [Validators.required, Validators.minLength(6)]]
+  //   },
+  //   {validator: this.passwordMatchValidator});
+  // }
 
   passwordMatchValidator(form: FormGroup) {
     const password = form.controls['password'].value;

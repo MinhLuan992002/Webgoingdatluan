@@ -107,12 +107,12 @@
       Register here if you don't have account
     </p>
 
-    <form
+    <!-- <form
       method=""
       action=""
       [formGroup]="infoCustomer"
       (ngSubmit)="onSubmit()"
-    >
+    > -->
       <div class="space-y-4">
         <div>
           <label
@@ -126,13 +126,13 @@
             class="input-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
             placeholder="Duy"
           />
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['firstName'].invalid &&
               infoCustomer.controls['firstName'].touched
             "
             class="text-red-500"
-          >
+          > -->
             First Name is required.
           </div>
         </div>
@@ -149,13 +149,13 @@
             class="input-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
             placeholder="Pham"
           />
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['lastName'].invalid &&
               infoCustomer.controls['lastName'].touched
             "
             class="text-red-500"
-          >
+          > -->
             Last Name is required.
           </div>
         </div>
@@ -172,13 +172,13 @@
             class="input-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
             placeholder="Pham"
           />
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['phoneNumber'].invalid &&
               infoCustomer.controls['phoneNumber'].touched
             "
             class="text-red-500"
-          >
+          > -->
             Phone Number is required and must have exactly 10 digits.
           </div>
         </div>
@@ -194,16 +194,16 @@
             class="input-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
             placeholder="Confirm your password"
           />
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['dateOfBirth'].invalid &&
               infoCustomer.controls['dateOfBirth'].touched
             "
             class="text-red-500"
-          >
+          > -->
             Date of Birth is required.
           </div>
-        </div>
+        <!-- </div> -->
 
         <div>
           <label
@@ -217,16 +217,16 @@
             class="input-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
             placeholder="example@mail.com"
           />
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['email'].invalid &&
               infoCustomer.controls['email'].touched
             "
             class="text-red-500"
-          >
+          > -->
             Please enter a valid email address.
           </div>
-        </div>
+        <!-- </div> -->
 
         <div>
           <label
@@ -240,16 +240,16 @@
             class="input-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
             placeholder="Type Password"
           />
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['password'].invalid &&
               infoCustomer.controls['password'].touched
             "
             class="text-red-500"
-          >
+          > -->
             Password is required and must have at least 6 characters.
           </div>
-        </div>
+        <!-- </div> -->
 
         <div>
           <label
@@ -263,26 +263,26 @@
             class="input-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
             placeholder="Confirm your password"
           />
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['confirmPassword'].invalid &&
               infoCustomer.controls['confirmPassword'].touched
             "
             class="text-red-500"
-          >
+          > -->
             Confirm Password is required and must have at least 6 characters.
           </div>
-          <div
+          <!-- <div
             *ngIf="
               infoCustomer.controls['confirmPassword'].hasError('mismatch') &&
               infoCustomer.controls['confirmPassword'].touched
             "
             class="text-red-500"
-          >
+          > -->
             Password and Confirm Password do not match.
-          </div>
-        </div>
-      </div>
+          <!-- </div> -->
+        <!-- </div>
+      </div> -->
 
       <div class="flex items-center justify-center mt-6">
         <div class="flex items-center">
@@ -340,6 +340,6 @@
       </p>
 
       <!-- ---- End Login with Social ----- -->
-    </form>
+    <!-- </form>
   </div>
-</div>
+</div> -->
