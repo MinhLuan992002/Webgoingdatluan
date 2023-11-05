@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ShopComponent } from './shop/shop.component';
-import { AccountComponent } from './account/account.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { CartComponent } from './cart/cart.component';
-import { WishlistComponent } from './wishlist/wishlist.component';
-import { AddressComponent } from './address/address.component';
-import { ChangepasswordComponent } from './changepassword/changepassword.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { OderCompleteComponent } from './oder-complete/oder-complete.component';
-import { ViewComponent } from './view/view.component';
-import { PayComponent } from './pay/pay.component';
-import { NewProductComponent } from './new-product/new-product.component';
+import { HomeComponent } from './components/home/home.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { AccountComponent } from './components/account/account.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CartComponent } from './components/cart/cart.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { AddressComponent } from './components/address/address.component';
+import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { OderCompleteComponent } from './components/oder-complete/oder-complete.component';
+import { ViewComponent } from './components/view/view.component';
+import { NewProductComponent } from './components/new-product/new-product.component';
+import { TypeProductComponent } from './components/type-product/type-product.component';
+import { CheckCartComponent } from './components/check-cart/check-cart.component';
+import { ProByTypeComponent } from './components/pro-by-type/pro-by-type.component';
 
 
 
@@ -24,6 +26,7 @@ const routes: Routes = [
   { path:'home', component:HomeComponent},
   { path:'view/:id', component: ViewComponent},
   { path:'shop', component:ShopComponent},
+  { path:'shop/category/:id', component:ShopComponent},
   { path:'account', component:AccountComponent},
   { path:'login', component:LoginComponent},
   { path:'register', component:RegisterComponent},
@@ -33,8 +36,13 @@ const routes: Routes = [
   { path:'changepassword', component: ChangepasswordComponent},
   { path:'checkout', component: CheckoutComponent},
   { path:'oder-complete', component: OderCompleteComponent},
-  { path: 'pay', component: PayComponent},
   { path: 'newproduct', component: NewProductComponent},
+  { path: 'typeproduct', component: TypeProductComponent},
+  { path: 'checkcart', component: CheckCartComponent},
+  // {
+  //   path: 'admin',
+  //   loadChildren: () => import('./items/items.module').then(m => m.ItemsModule)
+  // }
 
 
   

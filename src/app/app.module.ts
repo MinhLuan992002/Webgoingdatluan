@@ -4,33 +4,42 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ShopComponent } from './shop/shop.component';
-import { AccountComponent } from './account/account.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { CartComponent } from './cart/cart.component';
-import { WishlistComponent } from './wishlist/wishlist.component';
-import { AddressComponent } from './address/address.component';
-import { ViewComponent } from './view/view.component';
-import { ChangepasswordComponent } from './changepassword/changepassword.component';
-import { OderCompleteComponent } from './oder-complete/oder-complete.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { AdminComponent } from './backpage/admin/admin.component';
-import { AccountTableComponent } from './backpage/account.table/account.table.component';
-import { AccountModalComponent } from './backpage/account.modal/account.modal.component';
+import { HomeComponent } from './components/home/home.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { AccountComponent } from './components/account/account.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CartComponent } from './components/cart/cart.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { AddressComponent } from './components/address/address.component';
+import { ViewComponent } from './components/view/view.component';
+import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
+import { OderCompleteComponent } from './components/oder-complete/oder-complete.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PayComponent } from './pay/pay.component';
-import { NewProductComponent } from './new-product/new-product.component';
+import { NewProductComponent } from './components/new-product/new-product.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeVi from '@angular/common/locales/vi';
+import { TypeProductComponent } from './components/type-product/type-product.component';
+import { CheckCartComponent } from './components/check-cart/check-cart.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProByTypeComponent } from './components/pro-by-type/pro-by-type.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
+
+registerLocaleData(localeVi);
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+
     ShopComponent,
+    HomeComponent,
     AccountComponent,
     LoginComponent,
     RegisterComponent,
@@ -41,11 +50,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     ChangepasswordComponent,
     OderCompleteComponent,
     CheckoutComponent,
-    AdminComponent,
-    AccountTableComponent,
-    AccountModalComponent,
-    PayComponent,
+
     NewProductComponent,
+    TypeProductComponent,
+    CheckCartComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProByTypeComponent,
+    CategoriesComponent,
 
 
   ],
@@ -57,12 +69,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule
 
   ],
-  providers: [],
-  
+  providers: [{ provide: LOCALE_ID, useValue: 'vi' },],
+
   bootstrap:
-   [AppComponent]
-  
+    [AppComponent]
+
 })
 
 
-export class AppModule {}
+export class AppModule { }

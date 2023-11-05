@@ -9,8 +9,12 @@ import { initFlowbite } from 'flowbite';
 })
 export class AppComponent implements OnInit{
   title = 'Web_Going';
-
+  switchUICondtion = true;
   ngOnInit(): void {
     initFlowbite();
+    setInterval(()=>{
+      this.switchUICondtion = !this.switchUICondtion
+    },5000)
   }
+  
 }
